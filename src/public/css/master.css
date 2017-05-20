@@ -1,6 +1,7 @@
 /* public/css/master.css */
 
 /* global style */
+<<<<<<< HEAD
 form label{
  padding: 3px;
  margin-bottom: 0;
@@ -71,6 +72,11 @@ form .form-group{
  background-color: #F5F5F5;
  padding: 6px 15px;
 }
+=======
+.buttons form{
+ display: inline-block;
+}
+>>>>>>> 0c5882614b8702d1524916e48ec9ace69ea2c412
 
 /* home style */
 .home h1{
@@ -78,15 +84,19 @@ form .form-group{
 }
 
 /* post style */
+<<<<<<< HEAD
 .post {
  max-width: 670px;
  font-family: 'Open Sans', sans-serif;
  font-size: 12px;
 }
+=======
+>>>>>>> 0c5882614b8702d1524916e48ec9ace69ea2c412
 .post h2 {
  color: tomato;
  text-align: center;
 }
+<<<<<<< HEAD
 .post .post-body {
  white-space: pre-line;
  padding: 6px 15px 20px;
@@ -181,4 +191,11 @@ form .form-group{
 .user-edit hr{
  margin-top: 5px;
  margin-bottom: 11px;
+=======
+.post .post-body{
+ white-space: pre-line; /* 1 */
+}
+.post .posts .date{
+ width: 100px;
+>>>>>>> 0c5882614b8702d1524916e48ec9ace69ea2c412
 }

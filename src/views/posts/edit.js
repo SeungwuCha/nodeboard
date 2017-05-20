@@ -1,4 +1,4 @@
-<!-- views/posts/new.ejs -->
+<!-- views/posts/edit.ejs -->
 
 <!DOCTYPE html>
 <html>
@@ -8,31 +8,27 @@
  <body>
   <% include ../partials/nav %>
 
-  <div class="container post post-new">
+  <div class="container post post-edit">
    <% include ./partials/header %>
 
    <div class="buttons">
     <a class="btn btn-default" href="/posts">Back</a>
    </div>
 
-<<<<<<< HEAD
-   <form class="post-form form-horizontal" action="/posts" method="post"> <!--form 태그 가운데 정렬-->
-=======
-   <form class="post-form form-horizontal" action="/posts" method="post">
->>>>>>> 0c5882614b8702d1524916e48ec9ace69ea2c412
+   <form class="post-form form-horizontal" action="/posts/<%= post._id %>?_method=put" method="post">
     <div class="contentBox">
-     <h3 class="contentBoxTop">New Post</h3>
+     <h3 class="contentBoxTop">Edit Post</h3>
      <fieldset>
       <div class="form-group">
        <label for="title" class="col-sm-2 control-label">Title</label>
        <div class="col-sm-10">
-        <input class="form-control" type="text" id="title" name="title" value="">
+        <input class="form-control" type="text" id="title" name="title" value="<%= post.title %>">
        </div>
       </div>
       <div class="form-group">
        <label for="body" class="col-sm-2 control-label">Body</label>
        <div class="col-sm-10">
-        <textarea class="form-control" id="body" name="body" rows="5"></textarea>
+        <textarea class="form-control" id="body" name="body" rows="5"><%= post.body %></textarea>
        </div>
       </div>
      </fieldset>

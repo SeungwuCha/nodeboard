@@ -28,6 +28,9 @@ app.use("/", require("./routes/home"));
 app.use("/posts", require("./routes/posts")); // 1
 app.use("/users", require("./routes/users")); // 1
 
+app.use("/", require("./routes/home"));
+app.use("/posts", require("./routes/posts")); //
+
 // Port setting
 app.listen(4000, function(){
  console.log("server on!");
