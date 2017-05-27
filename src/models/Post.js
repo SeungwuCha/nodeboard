@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-// models/Post.js
-
-=======
->>>>>>> 0c5882614b8702d1524916e48ec9ace69ea2c412
 var mongoose = require("mongoose");
 
 // schema
